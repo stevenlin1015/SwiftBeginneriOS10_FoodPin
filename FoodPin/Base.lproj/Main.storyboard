@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-lP-vS0">
-                                            <rect key="frame" x="6" y="2" width="369" height="76"/>
+                                            <rect key="frame" x="6" y="10" width="369" height="68"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L8h-D8-b2U">
                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60.5"/>
@@ -65,7 +65,7 @@
                                         <constraint firstAttribute="trailing" secondItem="K6D-lP-vS0" secondAttribute="trailing" id="ClS-E1-bSF"/>
                                         <constraint firstAttribute="bottom" secondItem="K6D-lP-vS0" secondAttribute="bottom" constant="1.5" id="Lqd-hI-c6o"/>
                                         <constraint firstItem="K6D-lP-vS0" firstAttribute="leading" secondItem="Ejl-6A-EOe" secondAttribute="leading" constant="6" id="ULv-Ux-s8m"/>
-                                        <constraint firstItem="K6D-lP-vS0" firstAttribute="top" secondItem="Ejl-6A-EOe" secondAttribute="top" constant="2" id="qmU-Lb-RWs"/>
+                                        <constraint firstItem="K6D-lP-vS0" firstAttribute="top" secondItem="Ejl-6A-EOe" secondAttribute="top" constant="10" id="qmU-Lb-RWs"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

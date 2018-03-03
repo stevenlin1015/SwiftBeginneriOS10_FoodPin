@@ -58,6 +58,17 @@ class RestaurantTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //建立一個類似動作選單的清單
+        let optionMenu = UIAlertController(title: nil, message: "What do you want to do?", preferredStyle: .actionSheet)
+        
+        //加入動作至選單中
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        
+        //呈現選單
+        present(optionMenu, animated: true, completion: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.

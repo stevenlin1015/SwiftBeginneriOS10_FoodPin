@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Z19-x5-bw1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="Z19-x5-bw1" customClass="RestaurantTableViewCell" customModule="FoodPin" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Z19-x5-bw1" id="Ejl-6A-EOe">
@@ -68,6 +68,12 @@
                                         <constraint firstItem="K6D-lP-vS0" firstAttribute="top" secondItem="Ejl-6A-EOe" secondAttribute="top" constant="2" id="qmU-Lb-RWs"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="7xp-39-IOD" id="thT-qC-0aw"/>
+                                    <outlet property="nameLabel" destination="p7h-jG-ahc" id="fg8-zn-eZQ"/>
+                                    <outlet property="thumbnailImageView" destination="L8h-D8-b2U" id="fV0-W5-d31"/>
+                                    <outlet property="typeLabel" destination="pub-GS-6vF" id="NHI-cQ-xJ1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

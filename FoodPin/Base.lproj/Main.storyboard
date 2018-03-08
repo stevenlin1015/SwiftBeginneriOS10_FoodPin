@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -73,6 +74,7 @@
                                     <outlet property="nameLabel" destination="p7h-jG-ahc" id="fg8-zn-eZQ"/>
                                     <outlet property="thumbnailImageView" destination="L8h-D8-b2U" id="fV0-W5-d31"/>
                                     <outlet property="typeLabel" destination="pub-GS-6vF" id="NHI-cQ-xJ1"/>
+                                    <segue destination="AjC-Bi-eu4" kind="show" identifier="showRestaurantDetail" id="2Dy-b4-wNh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -86,6 +88,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VA6-8P-72S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="463.19999999999999" y="149.77511244377811"/>
+        </scene>
+        <!--Restaurant Detail View Controller-->
+        <scene sceneID="eJw-Hr-8Io">
+            <objects>
+                <viewController id="AjC-Bi-eu4" customClass="RestaurantDetailViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAp-Xz-AdO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kgD-Wl-ALo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="top" secondItem="qAp-Xz-AdO" secondAttribute="top" id="CmN-pL-TOX"/>
+                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="bottom" secondItem="Rge-8m-10G" secondAttribute="bottom" id="JHb-dX-ZcO"/>
+                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="trailing" secondItem="Rge-8m-10G" secondAttribute="trailing" id="OS5-i1-9PQ"/>
+                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="leading" secondItem="Rge-8m-10G" secondAttribute="leading" id="bb8-Qw-krG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rge-8m-10G"/>
+                    </view>
+                    <connections>
+                        <outlet property="restaurantImageView" destination="kgD-Wl-ALo" id="oqk-Zq-lBv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hV-cl-rRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1210.4000000000001" y="149.77511244377811"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yBM-EB-Mzo">

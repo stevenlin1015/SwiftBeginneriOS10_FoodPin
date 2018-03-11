@@ -46,8 +46,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xp-39-IOD">
-                                                            <rect key="frame" x="0.0" y="21.5" width="55" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xp-39-IOD">
+                                                            <rect key="frame" x="0.0" y="21.5" width="299" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -59,6 +59,9 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="7xp-39-IOD" secondAttribute="trailing" id="5ts-O0-bJ3"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                         </stackView>
@@ -122,7 +125,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-21-g2j">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-21-g2j">
                                                             <rect key="frame" x="120" y="0.0" width="240" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -137,7 +140,9 @@
                                             <constraints>
                                                 <constraint firstItem="xol-Vk-3Qv" firstAttribute="centerY" secondItem="3Xy-k6-sQZ" secondAttribute="centerY" id="10c-Ut-pPr"/>
                                                 <constraint firstItem="xol-Vk-3Qv" firstAttribute="leading" secondItem="3Xy-k6-sQZ" secondAttribute="leading" constant="15" id="1Ch-R9-XTX"/>
+                                                <constraint firstAttribute="bottom" secondItem="xol-Vk-3Qv" secondAttribute="bottom" constant="7" id="Eaj-RN-Is2"/>
                                                 <constraint firstAttribute="trailing" secondItem="xol-Vk-3Qv" secondAttribute="trailing" id="bBG-gf-9z1"/>
+                                                <constraint firstItem="xol-Vk-3Qv" firstAttribute="top" secondItem="3Xy-k6-sQZ" secondAttribute="top" constant="7" id="ls5-7O-9dP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

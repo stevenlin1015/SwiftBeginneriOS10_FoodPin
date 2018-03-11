@@ -85,5 +85,8 @@ class RestaurantDetailViewController: UIViewController, UITableViewDataSource, U
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func close(segue: UIStoryboardSegue) {
+        
+    }
 
 }

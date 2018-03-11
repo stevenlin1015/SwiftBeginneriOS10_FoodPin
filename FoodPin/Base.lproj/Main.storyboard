@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -97,21 +98,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kgD-Wl-ALo">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rZh-s6-91r">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="m0G-k3-TaL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="36" id="wkx-mY-Fnn" customClass="RestaurantDetailTableViewCell" customModule="FoodPin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="328" width="375" height="36"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wkx-mY-Fnn" id="3Xy-k6-sQZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xol-Vk-3Qv">
+                                                    <rect key="frame" x="15" y="7.5" width="360" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="261" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMd-x3-cue">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkz-21-g2j">
+                                                            <rect key="frame" x="120" y="0.0" width="240" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="AMd-x3-cue" firstAttribute="width" secondItem="rkz-21-g2j" secondAttribute="width" multiplier="0.5" id="FLe-Ju-8Se"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xol-Vk-3Qv" firstAttribute="centerY" secondItem="3Xy-k6-sQZ" secondAttribute="centerY" id="10c-Ut-pPr"/>
+                                                <constraint firstItem="xol-Vk-3Qv" firstAttribute="leading" secondItem="3Xy-k6-sQZ" secondAttribute="leading" constant="15" id="1Ch-R9-XTX"/>
+                                                <constraint firstAttribute="trailing" secondItem="xol-Vk-3Qv" secondAttribute="trailing" id="bBG-gf-9z1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fieldLabel" destination="AMd-x3-cue" id="HnF-NN-daF"/>
+                                            <outlet property="valueLabel" destination="rkz-21-g2j" id="5ms-RX-Vnd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="AjC-Bi-eu4" id="k1m-ro-DhF"/>
+                                    <outlet property="delegate" destination="AjC-Bi-eu4" id="cSc-y3-HEB"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="top" secondItem="qAp-Xz-AdO" secondAttribute="top" id="CmN-pL-TOX"/>
-                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="bottom" secondItem="Rge-8m-10G" secondAttribute="bottom" id="JHb-dX-ZcO"/>
-                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="trailing" secondItem="Rge-8m-10G" secondAttribute="trailing" id="OS5-i1-9PQ"/>
-                            <constraint firstItem="kgD-Wl-ALo" firstAttribute="leading" secondItem="Rge-8m-10G" secondAttribute="leading" id="bb8-Qw-krG"/>
+                            <constraint firstItem="rZh-s6-91r" firstAttribute="bottom" secondItem="Rge-8m-10G" secondAttribute="bottom" id="3zj-Hn-9wJ"/>
+                            <constraint firstItem="rZh-s6-91r" firstAttribute="top" secondItem="qAp-Xz-AdO" secondAttribute="top" id="6jH-Yv-wNO"/>
+                            <constraint firstItem="rZh-s6-91r" firstAttribute="leading" secondItem="Rge-8m-10G" secondAttribute="leading" id="B9R-6A-Nv6"/>
+                            <constraint firstItem="rZh-s6-91r" firstAttribute="trailing" secondItem="Rge-8m-10G" secondAttribute="trailing" id="yig-j7-4zU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rge-8m-10G"/>
                     </view>
                     <connections>
-                        <outlet property="restaurantImageView" destination="kgD-Wl-ALo" id="oqk-Zq-lBv"/>
+                        <outlet property="restaurantImageView" destination="m0G-k3-TaL" id="CkJ-qu-itO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hV-cl-rRq" userLabel="First Responder" sceneMemberID="firstResponder"/>

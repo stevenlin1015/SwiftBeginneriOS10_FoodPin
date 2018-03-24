@@ -19,6 +19,7 @@
 		3F9640DF204A5780005DBCE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9640DD204A5780005DBCE9 /* LaunchScreen.storyboard */; };
 		3F9640E7204A5836005DBCE9 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9640E6204A5836005DBCE9 /* RestaurantTableViewController.swift */; };
 		3F9640E9204A6127005DBCE9 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9640E8204A6127005DBCE9 /* RestaurantTableViewCell.swift */; };
+		3FFFFF322065E7BA00DDB9E3 /* AddRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFFF312065E7BA00DDB9E3 /* AddRestaurantController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3F9640E0204A5780005DBCE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F9640E6204A5836005DBCE9 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		3F9640E8204A6127005DBCE9 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		3FFFFF312065E7BA00DDB9E3 /* AddRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRestaurantController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				3F779AFD2054DE9F0067B27C /* RestaurantDetailTableViewCell.swift */,
 				3F779AFF205576830067B27C /* ReviewViewController.swift */,
 				3F779B6820636D6D0067B27C /* MapViewController.swift */,
+				3FFFFF312065E7BA00DDB9E3 /* AddRestaurantController.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FFFFF322065E7BA00DDB9E3 /* AddRestaurantController.swift in Sources */,
 				3F779AC020518A0A0067B27C /* Restaurant.swift in Sources */,
 				3F9640E7204A5836005DBCE9 /* RestaurantTableViewController.swift in Sources */,
 				3F779B00205576830067B27C /* ReviewViewController.swift in Sources */,
